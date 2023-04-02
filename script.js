@@ -20,7 +20,7 @@ function generatePassword() {
   let special = confirm("Include special characters?");
 
   //this section confirms that there was input provided by the user
-  if(!lowerCase && upperCase && numeric && special){
+  if(!(lowerCase && upperCase && numeric && special)){
     alert("Please select at least one character type");
     return "";
   }
